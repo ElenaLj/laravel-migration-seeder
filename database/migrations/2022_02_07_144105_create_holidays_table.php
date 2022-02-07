@@ -26,6 +26,7 @@ class CreateHolidaysTable extends Migration
             $table->string("room_type", 20);
             $table->smallInteger("price");
             $table->boolean("confirmed");
+            $table->text("description")->nullable;
             $table->timestamps();
         });
     }
